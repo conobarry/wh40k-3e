@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ec00-168a-924d-e400" name="Chaos Space Marines (Rulebook)" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ec00-168a-924d-e400" name="Chaos Space Marines (Rulebook)" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Aspiring Champion" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="1006-3177-f76b-63fd">
       <characteristics>
@@ -357,34 +357,38 @@
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Space Marine Squad" hidden="false" id="da30-4b16-4a22-3356">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Aspiring Champion" hidden="false" id="e1ef-ff7e-19e3-e932">
-          <costs>
-            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="62ec-b77b-d2e4-1bf8" type="selectionEntryGroup" targetId="1c4f-809a-25f7-eb81"/>
-          </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chaos Space Marines" id="ce0e-e6e5-bd3a-296e" hidden="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3f-56e7-c594-ae5a"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="0529-faf1-55e1-f512"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c6fa-044e-3251-5ebf"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Aspiring Champion" id="fc0c-815f-4963-30eb" hidden="false" type="profile" targetId="1006-3177-f76b-63fd"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Chaos Space Marine" hidden="false" id="1b14-7484-9bb2-cffe">
-          <costs>
-            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Chaos Space Marine" id="fb80-fdb6-916d-dd20" hidden="false" type="profile" targetId="ad54-877f-bb5d-c83c"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c6fa-044e-3251-5ebf"/>
-        <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="0529-faf1-55e1-f512"/>
-      </constraints>
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Chaos Space Marine" hidden="false" id="1b14-7484-9bb2-cffe">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Chaos Space Marine" id="fb80-fdb6-916d-dd20" hidden="false" type="profile" targetId="ad54-877f-bb5d-c83c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Aspiring Champion" hidden="false" id="e1ef-ff7e-19e3-e932">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="62ec-b77b-d2e4-1bf8" type="selectionEntryGroup" targetId="1c4f-809a-25f7-eb81"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3f-56e7-c594-ae5a"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Aspiring Champion" id="fc0c-815f-4963-30eb" hidden="false" type="profile" targetId="1006-3177-f76b-63fd"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
