@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="ec00-168a-924d-e400" name="Chaos Space Marines (Rulebook)" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="Aspiring Champion" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="1006-3177-f76b-63fd">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">2</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Beast" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="8e11-9ac9-d042-559a">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">0</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">5</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">1</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Khorne Berzerker" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="2a91-54b1-1b95-0b1a">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">2</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">9</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Berzerker Champion" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="b7ff-dbae-1d09-bc08">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">3</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Daemon" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="5c7a-2673-ba70-55b1">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">0</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">2</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bloodthirster" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="d90c-c6ee-375b-4311">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">9</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">0</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">8</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">6</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">4</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">5</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Biker" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="706a-1310-7d93-28ac">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">5</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">1</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">9</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aspiring Champion Biker" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="9858-5194-f215-94e7">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">5</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">2</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Sorcerer" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="1aed-0d8e-ec71-b885">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">5</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">5</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">2</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">5</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">3</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Space Marine" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="ad54-877f-bb5d-c83c">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">1</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">9</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Terminator" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="b0e4-f189-a7e4-8d18">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">2</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Daemon Prince" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="f43f-a15a-3317-6353">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">6</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">0</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">5</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">3</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">5</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">3</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Exalted Champion" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="0d69-f450-f31f-109c">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">5</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">5</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">3</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">5</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">3</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Great Unclean One" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="71f2-7b7b-e8d0-a9e3">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">5</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">3</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">7</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">5</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">6</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">2</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">3</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Keeper of Secrets" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="7134-3d1c-432b-c000">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">7</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">0</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">7</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">6</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">4</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">5</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lord of Change" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="48f4-2bc6-83e6-49d0">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">8</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">6</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">6</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">4</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">6</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">3</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mighty Champion" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="7e7a-b65e-6d78-56cd">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">5</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">5</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">2</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">5</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">3</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Nurgling" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="94b5-703b-3413-227f">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">3</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">0</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">3</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">3</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">3</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">3</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">3</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">7</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Plague Marine" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="921d-a06f-a220-e810">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">5</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">1</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">9</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Plague Champion" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="2887-4a68-f00a-1a73">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">5</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">2</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">10</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Thousand Son Marine" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="f7d9-e32a-2b06-ab05">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">2</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">1</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">9</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Veteran" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="d1d8-b363-8f5b-1352">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">1</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">9</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Rhino" typeId="5535-2b48-81ee-04ce" typeName="Transport" hidden="false" id="d55c-0404-dcca-14f5">
+      <characteristics>
+        <characteristic name="Front Armor" typeId="70ae-7a97-7e70-93ea">11</characteristic>
+        <characteristic name="Side Armor" typeId="bcca-0b51-9187-2e4e">11</characteristic>
+        <characteristic name="Rear Armor" typeId="929b-c9cc-001b-3705">10</characteristic>
+        <characteristic name="BS" typeId="ae25-5be4-5470-2204">4</characteristic>
+        <characteristic name="Capacity" typeId="ec07-2d55-2ba5-6080">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Dreadnought" typeId="5119-5456-6e97-4fc2" typeName="Walker" hidden="false" id="c602-7503-7823-900b">
+      <characteristics>
+        <characteristic name="WS" typeId="46fa-bb2a-a0f5-6b3f">4</characteristic>
+        <characteristic name="BS" typeId="5734-f043-7bcc-cff2">4</characteristic>
+        <characteristic name="S" typeId="2870-c64f-81e5-a118">6(10)</characteristic>
+        <characteristic name="Front Armor" typeId="cb1a-f3fe-1dc0-5708">12</characteristic>
+        <characteristic name="Side Armor" typeId="25a2-b98c-a034-c6f6">12</characteristic>
+        <characteristic name="Rear Armor" typeId="b798-62af-f346-b1c1">10</characteristic>
+        <characteristic name="I" typeId="695a-ba63-65d1-3ce5">4</characteristic>
+        <characteristic name="A" typeId="bb33-7ddf-2296-174e">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Land Raider" typeId="0ef1-7861-4312-c7aa" typeName="Vehicle" hidden="false" id="ba6d-1109-b99f-5184">
+      <characteristics>
+        <characteristic name="Front Armor" typeId="6723-22c2-f6f0-6cbf">14</characteristic>
+        <characteristic name="Side Armor" typeId="ef72-8ecb-1637-97bb">14</characteristic>
+        <characteristic name="Rear Armor" typeId="99bc-d564-3760-e4b0">14</characteristic>
+        <characteristic name="BS" typeId="b109-f88e-dcc7-8a24">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Predator" typeId="0ef1-7861-4312-c7aa" typeName="Vehicle" hidden="false" id="599c-a98a-feec-dcd5">
+      <characteristics>
+        <characteristic name="Front Armor" typeId="6723-22c2-f6f0-6cbf">13</characteristic>
+        <characteristic name="Side Armor" typeId="ef72-8ecb-1637-97bb">11</characteristic>
+        <characteristic name="Rear Armor" typeId="99bc-d564-3760-e4b0">10</characteristic>
+        <characteristic name="BS" typeId="b109-f88e-dcc7-8a24">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Noise Marine" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="e78b-dc33-cb4c-ad81">
+      <characteristics>
+        <characteristic name="WS" typeId="c704-6128-f143-935a">4</characteristic>
+        <characteristic name="BS" typeId="7928-3a9b-6080-ed95">4</characteristic>
+        <characteristic name="S" typeId="df03-6292-d3f5-f778">4</characteristic>
+        <characteristic name="T" typeId="e5f6-94c4-de8c-5fa8">4</characteristic>
+        <characteristic name="W" typeId="4dc2-c603-0bc5-0561">1</characteristic>
+        <characteristic name="I" typeId="eeda-4fb4-901e-b70d">4</characteristic>
+        <characteristic name="A" typeId="abbf-0d11-fd86-d938">1</characteristic>
+        <characteristic name="Ld" typeId="f47e-b15a-8f58-703c">9</characteristic>
+        <characteristic name="Sv" typeId="b309-5233-122f-82bb">3+</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Exalted Champion" hidden="false" id="4697-8f30-d353-cb13">
+      <costs>
+        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="60"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Exalted Champion" id="39c0-eae0-8219-2b6f" hidden="false" type="profile" targetId="0d69-f450-f31f-109c"/>
+        <infoLink name="Independent Character" id="9ada-a879-193a-727d" hidden="false" type="rule" targetId="4a60-7f7e-c37f-a4d6"/>
+        <infoLink name="Bolt Pistol" id="9b84-bff1-748c-92ee" hidden="false" type="profile" targetId="e9ac-c779-51bb-3c9a"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="5e1e-f651-aa57-c719" type="selectionEntryGroup" targetId="1c4f-809a-25f7-eb81"/>
+        <entryLink import="true" name="Chaos Lord Mounts" hidden="false" id="6f03-a6c4-f2ae-f248" type="selectionEntryGroup" targetId="df98-0f15-3273-36d1"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="646a-0844-8c23-3933" targetId="a8a7-7a4b-5f7e-2138" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chaos Space Marine Squad" hidden="false" id="da30-4b16-4a22-3356">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Aspiring Champion" hidden="false" id="e1ef-ff7e-19e3-e932">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="62ec-b77b-d2e4-1bf8" type="selectionEntryGroup" targetId="1c4f-809a-25f7-eb81"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3f-56e7-c594-ae5a"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Aspiring Champion" id="fc0c-815f-4963-30eb" hidden="false" type="profile" targetId="1006-3177-f76b-63fd"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Chaos Space Marine" hidden="false" id="1b14-7484-9bb2-cffe">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Chaos Space Marine" id="fb80-fdb6-916d-dd20" hidden="false" type="profile" targetId="ad54-877f-bb5d-c83c"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c6fa-044e-3251-5ebf"/>
+        <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="0529-faf1-55e1-f512"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Chaos Champions Wargear" id="1c4f-809a-25f7-eb81" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="df75-ea38-e7e7-9644">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="1"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Close Combat Weapon" id="587e-e452-cd14-32f1" hidden="false" type="profile" targetId="46d5-85f2-d932-f0a2"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Power fist/chainfist" hidden="false" id="91f8-bc15-5f5d-b85a">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="25"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Power Fist" id="909e-f3d4-71ad-d1cf" hidden="false" type="profile" targetId="a161-ed4b-bcb7-0a01"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="4399-1fcf-91ea-f8f7">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Power Weapon" id="9213-2100-abf1-54e1" hidden="false" type="profile" targetId="5774-7187-2616-dd8a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="f14f-e8e4-1d7b-429b">
+          <infoLinks>
+            <infoLink name="Plasma Pistol" id="e4d6-1b82-0e3b-7a4c" hidden="false" type="profile" targetId="7b91-b670-d042-7c88"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bolter" hidden="false" id="b655-9e62-7b78-a687">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Boltgun" id="8f57-f6f5-e99f-e993" hidden="false" type="profile" targetId="60bf-18fd-f6e6-6eb4"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Frag and krak grenades" hidden="false" id="03b0-f0b9-c733-d7d5">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Frag Grenades" id="aeaf-5848-1189-79e6" hidden="false" type="profile" targetId="9dd4-e950-2419-5934"/>
+            <infoLink name="Krak Grenades" id="87c9-1801-4c5f-c367" hidden="false" type="profile" targetId="9c1b-bf93-059b-27f5"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Terminator armour (Includes storm bolter and power fist)" hidden="false" id="ea54-86be-d4b6-0951">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="55"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Power Fist" id="5f91-fcfc-60ca-33ca" hidden="false" type="profile" targetId="a161-ed4b-bcb7-0a01"/>
+            <infoLink name="Storm Bolter" id="d17c-05d8-8289-0617" hidden="false" type="profile" targetId="4c6c-9de1-00a8-8016"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b113-b764-f424-074f"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="b113-b764-f424-074f">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Chaos Lord Mounts" id="df98-0f15-3273-36d1" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Juggernaut" hidden="false" id="55d4-f8e5-908c-11a0">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="50"/>
+          </costs>
+          <modifiers>
+            <modifier type="increment" value="2" field="e5f6-94c4-de8c-5fa8" scope="parent" affects="profiles.Unit"/>
+            <modifier type="increment" value="2" field="abbf-0d11-fd86-d938" scope="parent" affects="profiles.Unit"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Steed of Slaanesh" hidden="false" id="48cf-773b-943d-d094">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="increment" value="1" field="abbf-0d11-fd86-d938" scope="parent" affects="profiles.Unit"/>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Cavalry" id="2ee8-cda0-9556-d30a" hidden="false" type="rule" targetId="0e80-1d1e-f91a-11fe"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Disc of Tzeentch" hidden="false" id="6a5b-f2b6-c952-7817">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Jump Packs" id="bf2d-7d54-34dd-0fd0" hidden="false" type="rule" targetId="2563-092a-a5bc-992f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af4f-3a15-9181-9745"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Chaos Lord&apos;s Retinue" id="c82a-fc91-3f7c-5854" hidden="false"/>
+  </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Exalted Champion" hidden="false" id="7e96-b485-c610-feaf" type="selectionEntry" targetId="4697-8f30-d353-cb13"/>
+    <entryLink import="true" name="Chaos Space Marine Squad" hidden="false" id="e0ba-1d2c-b55f-65ba" type="selectionEntry" targetId="da30-4b16-4a22-3356">
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="b5ad-06b4-2a40-2dd2" targetId="0ef5-5056-d52e-3cfd" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
