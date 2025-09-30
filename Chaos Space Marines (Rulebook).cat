@@ -782,6 +782,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ab7-144f-78ce-5b1a"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chaos Sorcerer" hidden="false" id="73a0-0247-eb4c-f2d2" collective="false">
       <infoLinks>
@@ -1999,6 +2002,9 @@
         <entryLink import="true" name="Krak Grenades" hidden="false" id="b5bd-6a96-54ab-7cd4" type="selectionEntry" targetId="9525-22ab-920f-80d5" sortIndex="2"/>
         <entryLink import="true" name="Chaos Rhino" hidden="false" id="1de5-ad93-54d1-1522" type="selectionEntry" targetId="a180-cc1a-4a8e-c00a" sortIndex="4"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fd8-8eb2-75a8-2c09"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Icon Bearer" hidden="false" id="a877-9578-a330-b58c" sortIndex="3">
           <costs>
@@ -2026,11 +2032,7 @@
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="6c54-584f-7611-2cf2"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="632a-ca38-8dff-540c"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7504-c4a2-628c-6913"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="7504-c4a2-628c-6913"/>
-          </modifiers>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Chaos Space Marine w/ Weapon Upgrade" hidden="false" id="c7d3-f569-e5d1-7c12">
               <infoLinks>

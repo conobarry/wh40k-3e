@@ -146,18 +146,6 @@
     <forceEntry id="7da2-40c9-890c-3239" name="1-Standard Missions" hidden="false">
       <comment>Imperial Guard (2003)</comment>
       <categoryLinks>
-        <categoryLink id="d4a3-35ce-7202-922e" name="Elites" hidden="false" targetId="6d25-b346-c314-6911" primary="false">
-          <modifiers>
-            <modifier type="set" field="de34-49f5-ca37-bd3c" value="1">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f78-c07f-9062-0d43" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de34-49f5-ca37-bd3c" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="9c02-ec48-1124-380f" name="HQ" hidden="false" targetId="a8a7-7a4b-5f7e-2138" primary="false">
           <comment>Note that Space Wolves get a special HQ selection process. They must have 1 HQ per 750 points.</comment>
           <modifiers>
@@ -180,6 +168,18 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d1d-6801-aa7b-ea91" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79c8-d712-b3f8-3fbc" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d4a3-35ce-7202-922e" name="Elites" hidden="false" targetId="6d25-b346-c314-6911" primary="false">
+          <modifiers>
+            <modifier type="set" field="de34-49f5-ca37-bd3c" value="1">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f78-c07f-9062-0d43" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de34-49f5-ca37-bd3c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="6521-d14c-a203-f2d5" name="Troops" hidden="false" targetId="0ef5-5056-d52e-3cfd" primary="false">
