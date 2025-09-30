@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="96e2-b781-50d7-3d18" name="Warhammer 40k 3rd Edition" revision="3" battleScribeVersion="2.03" authorName="Snyder" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="96e2-b781-50d7-3d18" name="Warhammer 40k 3rd Edition" revision="4" battleScribeVersion="2.03" authorName="Snyder" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>This is intended to create a catalog of Warhammer 40k at the point when 3rd Edition was replaced with 4th Edition. Prior 3rd Edition books may be added over time.</comment>
   <publications>
     <publication id="263c-b15e-84a3-a711" name="Codex Necrons 3rd Edition" shortName="Necrons" publisher="Codex Necrons" publicationDate="2002"/>
@@ -1824,7 +1824,7 @@ Cannot be used by: Bikes, Steeds, Daemonic Stature, Mark of Khorne, or Terminato
     <rule id="4556-3c66-6ed4-87a0" name="Jetbikes" hidden="false">
       <description>Can ignore terrain when moving but must roll a D6 when moving in or out of Difficult Terrain. On a 1, the model is killed with no Armor Save allowed.</description>
     </rule>
-    <rule id="445e-e873-2a3f-776f" name="Monstorous Creature" hidden="false">
+    <rule id="445e-e873-2a3f-776f" name="Monstrous Creature" hidden="false">
       <description>Ignores Armor Saves</description>
     </rule>
     <rule id="5150-e938-2792-646f" name="Tank" hidden="false">
