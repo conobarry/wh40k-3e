@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="96e2-b781-50d7-3d18" name="Warhammer 40k 3rd Edition" revision="4" battleScribeVersion="2.03" authorName="Snyder" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="96e2-b781-50d7-3d18" name="Warhammer 40k 3rd Edition" revision="5" battleScribeVersion="2.03" authorName="Snyder" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>This is intended to create a catalog of Warhammer 40k at the point when 3rd Edition was replaced with 4th Edition. Prior 3rd Edition books may be added over time.</comment>
   <publications>
     <publication id="263c-b15e-84a3-a711" name="Codex Necrons 3rd Edition" shortName="Necrons" publisher="Codex Necrons" publicationDate="2002"/>
@@ -2289,6 +2289,9 @@ Effect: Used before determining who goes first. If successful, the user&apos;s f
 
 Blind/smoke grenades are used in the Shooting phase instead of the unit firing any weapons. Mark the unit as using its blind/smoke grenades by placing cotton wool around them. A unit cannot assault on the same turn it uses blind/smoke grenades. The blind/smoke screen lasts until the start of the player&apos;s next turn and until then the unit counts as in cover with a 5+ cover save. Because they count as being in cover, models in the unit will also strike first if assaulting, unless the enemy is armed with something like frag grenades, or has an ability that allows them to always strike first.</description>
     </rule>
+    <rule name="Smoke Launchers" id="d942-86cd-2bb3-da88" hidden="false" publicationId="8acd-6511-d7f4-63c7" page="88">
+      <description>Once per game, after completing its movement, a vehicle with smoke launchers can trigger them. Any penetrating hits against this vehicle count as glancing hits until the end of the enemy turn. The vehicle may not fire in the same turn as it used its smoke launchers.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="9177-ce8a-92e3-157e" name="Flamer" hidden="false" typeId="b399-8a1b-bf0b-c5b7" typeName="Weapon">
@@ -2405,7 +2408,7 @@ Blind/smoke grenades are used in the Shooting phase instead of the unit firing a
         <characteristic name="S" typeId="24d8-2110-08fa-d844">8</characteristic>
         <characteristic name="AP" typeId="25ce-028f-0aae-2855">1</characteristic>
         <characteristic name="Type" typeId="d3f6-19e8-ac9e-ae13">Assault 1</characteristic>
-        <characteristic name="Abilities" typeId="492d-1f80-b777-26f2">Meltaguns are devastating short ranged &quot;heat rays.&quot; Melta weapons roll an extra D6 to penetrate vehicles at half range.</characteristic>
+        <characteristic name="Abilities" typeId="492d-1f80-b777-26f2">Meltaguns are devastating short ranged &apos;heat rays&apos;. Melta weapons roll an extra D6 to penetrate vehicles at half range.</characteristic>
       </characteristics>
     </profile>
     <profile id="aa04-2d5e-da7e-2d25" name="Missile Launcher (frag)" hidden="false" typeId="b399-8a1b-bf0b-c5b7" typeName="Weapon">
@@ -2414,7 +2417,7 @@ Blind/smoke grenades are used in the Shooting phase instead of the unit firing a
         <characteristic name="S" typeId="24d8-2110-08fa-d844">4</characteristic>
         <characteristic name="AP" typeId="25ce-028f-0aae-2855">6</characteristic>
         <characteristic name="Type" typeId="d3f6-19e8-ac9e-ae13">Heavy 1 Blast</characteristic>
-        <characteristic name="Abilities" typeId="492d-1f80-b777-26f2">Missile Launchers can fire either frag or krak rounds. Choose which to shot before rolling to hit.</characteristic>
+        <characteristic name="Abilities" typeId="492d-1f80-b777-26f2">Missile Launchers can fire either frag or krak rounds. Choose which to shoot before rolling to hit.</characteristic>
       </characteristics>
     </profile>
     <profile id="4e6c-7b62-ba6d-05cf" name="Missile Launcher (krak)" hidden="false" typeId="b399-8a1b-bf0b-c5b7" typeName="Weapon">
@@ -2423,7 +2426,7 @@ Blind/smoke grenades are used in the Shooting phase instead of the unit firing a
         <characteristic name="S" typeId="24d8-2110-08fa-d844">8</characteristic>
         <characteristic name="AP" typeId="25ce-028f-0aae-2855">3</characteristic>
         <characteristic name="Type" typeId="d3f6-19e8-ac9e-ae13">Heavy 1</characteristic>
-        <characteristic name="Abilities" typeId="492d-1f80-b777-26f2">Missile Launchers can fire either frag or krak rounds. Choose which to shot before rolling to hit.</characteristic>
+        <characteristic name="Abilities" typeId="492d-1f80-b777-26f2">Missile Launchers can fire either frag or krak rounds. Choose which to shoot before rolling to hit.</characteristic>
       </characteristics>
     </profile>
     <profile id="57eb-e5dd-c986-ffaa" name="Mortar" hidden="false" typeId="b399-8a1b-bf0b-c5b7" typeName="Weapon">
@@ -3267,7 +3270,7 @@ Haywire grenades may only be used against Dreadnoughts if the Dreadnought is imm
         <characteristic name="S" typeId="24d8-2110-08fa-d844">X</characteristic>
         <characteristic name="AP" typeId="25ce-028f-0aae-2855">6</characteristic>
         <characteristic name="Type" typeId="d3f6-19e8-ac9e-ae13">Heavy 1</characteristic>
-        <characteristic name="Abilities" typeId="492d-1f80-b777-26f2">Sniper Rifles aways hit on a 2+ and its Strength always equals the Toughness of the target. Units suffering casualties from a sniper rifles must test to avoid pinning as for a barrage. A sniper rifle only has an armor penetration of D6 against a vehicle.</characteristic>
+        <characteristic name="Abilities" typeId="492d-1f80-b777-26f2">Always hits on 2+ and its Strength is always equals the Toughness of the target (so it always wounds on a 4+). Units suffering casualties from a sniper rifles must test to avoid pinning as for a barrage. A sniper rifle only has an armour penetration of D6 against a vehicle.</characteristic>
       </characteristics>
     </profile>
     <profile id="3da4-191b-40b4-847a" name="Wraithcannon" hidden="false" typeId="b399-8a1b-bf0b-c5b7" typeName="Weapon">

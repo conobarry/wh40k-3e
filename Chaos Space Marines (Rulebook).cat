@@ -443,7 +443,7 @@
         <categoryLink name="HQ" hidden="false" id="70bf-b3c5-77ed-411b" targetId="a8a7-7a4b-5f7e-2138" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Chaos Dreadnought" hidden="false" id="5cd7-e44d-7756-e836" collective="false">
+    <selectionEntry type="model" import="true" name="Chaos Dreadnought" hidden="false" id="5cd7-e44d-7756-e836" collective="false">
       <infoLinks>
         <infoLink name="Chaos Dreadnought" id="c085-d674-0837-7bf5" hidden="false" targetId="c602-7503-7823-900b" type="profile"/>
       </infoLinks>
@@ -641,7 +641,7 @@
         <categoryLink name="Heavy Support" hidden="false" id="5718-d10d-e716-98f7" targetId="aacb-8a81-62c0-3db8" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chaos Land Raider" hidden="false" id="5591-452e-b2aa-5773" collective="false">
+    <selectionEntry type="model" import="true" name="Chaos Land Raider" hidden="false" id="5591-452e-b2aa-5773" collective="false">
       <rules>
         <rule name="Fire Control" id="acfa-d995-9d61-d2a5" hidden="false">
           <description>The vehicle may always fire one additional weapon system to those that would normally be able to be fired giving the speed or status of the vehicle. This shot may even be targetting at a different target than that engaged by the crew. It is conducted with a BS 2.</description>
@@ -743,29 +743,56 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Rhino" hidden="false" id="a180-cc1a-4a8e-c00a" collective="false">
       <infoLinks>
-        <infoLink name="Chaos Rhino" id="61c0-96e3-25e8-2389" hidden="false" targetId="46d4-fffd-4ff1-5488" type="profile"/>
         <infoLink name="Storm Bolter" id="3998-a47b-959e-076c" hidden="false" targetId="4c6c-9de1-00a8-8016" type="profile"/>
+        <infoLink name="Chaos Rhino" id="17d2-8e1d-9807-11bf" hidden="false" type="profile" targetId="d55c-0404-dcca-14f5"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Chaos Vehicle Upgrades" hidden="false" id="e84f-8a16-b5db-9a01" collective="false" targetId="bfd1-fafd-af3a-a625" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
-        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="60"/>
+        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="50"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Dedicated Transport" hidden="false" id="2339-5202-47f4-2237" targetId="a090-a855-c7de-f5c3" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Smoke Launchers" hidden="false" id="2930-49d7-c2fa-fab5">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Smoke Launchers" id="7a55-f7f9-d228-e2bf" hidden="false" type="rule" targetId="d942-86cd-2bb3-da88"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cc3-814c-93a9-49ed"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Transport" id="0935-3d6b-a11e-76b4" hidden="false">
+          <description>The Rhino can carry up to ten Space Marines. It may not carry Terminators.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="90ea-4caf-490a-41c9" shared="true"/>
+                <condition type="greaterThan" value="10" field="selections" scope="parent" childId="model" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Chaos Sorcerer" hidden="false" id="73a0-0247-eb4c-f2d2" collective="false">
+    <selectionEntry type="model" import="true" name="Chaos Sorcerer" hidden="false" id="73a0-0247-eb4c-f2d2" collective="false">
       <infoLinks>
-        <infoLink name="Chaos Sorcerer" id="e9e9-d433-bc0c-8726" hidden="false" targetId="0e9d-6ab1-7f36-56f5" type="profile"/>
+        <infoLink name="Chaos Sorcerer" id="4179-2485-1123-a226" hidden="false" type="profile" targetId="1aed-0d8e-ec71-b885"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Psyker" hidden="false" id="915f-a3cd-ff88-947b" targetId="3cb1-645b-8bbb-3d49" primary="false"/>
         <categoryLink name="HQ" hidden="false" id="6e39-71dd-b4c3-95c2" targetId="a8a7-7a4b-5f7e-2138" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Chaos Armoury" hidden="false" id="9e6a-f3c9-f60d-73cc" collective="false" targetId="f2d6-226f-3a34-c33f" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="eb41-5d19-351d-5076" type="selectionEntryGroup" targetId="4b7f-dfe0-d924-8ff6"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="30"/>
@@ -1218,7 +1245,7 @@
         <categoryLink name="Troops" hidden="false" id="899d-7990-cf18-9b6c" targetId="0ef5-5056-d52e-3cfd" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chaos Terminators" hidden="false" id="f66e-b350-e674-9e62" collective="false">
+    <selectionEntry type="unit" import="true" name="Chaos Terminators" hidden="false" id="f66e-b350-e674-9e62" collective="false">
       <infoLinks>
         <infoLink name="Deep Strike" id="8c4d-7df3-0a1d-cf4d" hidden="false" targetId="5715-6219-5059-9bcf" type="rule"/>
       </infoLinks>
@@ -1463,7 +1490,7 @@
         <infoLink name="Exalted Champion" id="8ded-d8db-56de-f9b8" hidden="false" type="profile" targetId="0d69-f450-f31f-109c"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="fc87-2e0e-9f30-1587" type="selectionEntryGroup" targetId="1c4f-809a-25f7-eb81" sortIndex="1"/>
+        <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="fc87-2e0e-9f30-1587" type="selectionEntryGroup" targetId="4b7f-dfe0-d924-8ff6" sortIndex="1"/>
         <entryLink import="true" name="Chaos Lord Mounts" hidden="false" id="f432-3a7a-5110-3b25" type="selectionEntryGroup" targetId="df98-0f15-3273-36d1" sortIndex="2"/>
         <entryLink import="true" name="Chaos Lord&apos;s Retinue" hidden="false" id="249f-aa99-33a7-4e6c" type="selectionEntry" targetId="aeaa-d9a8-e32f-7673" sortIndex="3"/>
       </entryLinks>
@@ -1622,7 +1649,7 @@
         <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mighty Champion" hidden="false" id="a8ba-6e58-17e8-5801" collective="false">
+    <selectionEntry type="model" import="true" name="Mighty Champion" hidden="false" id="a8ba-6e58-17e8-5801" collective="false">
       <infoLinks>
         <infoLink name="Mighty Champion" id="6382-83e9-8bc9-f6d3" hidden="false" targetId="7e7a-b65e-6d78-56cd" type="profile"/>
         <infoLink name="Independent Character" id="4077-5fbe-c3e1-19a1" hidden="false" type="rule" targetId="4a60-7f7e-c37f-a4d6"/>
@@ -1781,7 +1808,7 @@
         <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Nurglings" hidden="false" id="c75d-3602-7613-27d8" collective="false">
+    <selectionEntry type="unit" import="true" name="Nurglings" hidden="false" id="c75d-3602-7613-27d8" collective="false">
       <infoLinks>
         <infoLink name="Invulnerable Saving Throw" id="4b90-07f9-0911-e12f" hidden="false" targetId="97b3-810d-a09e-872b" type="rule"/>
       </infoLinks>
@@ -1970,6 +1997,7 @@
       <entryLinks>
         <entryLink import="true" name="Frag Grenades" hidden="false" id="3a8c-326a-819e-6fb4" type="selectionEntry" targetId="fb1e-82b3-3990-90c5" sortIndex="1"/>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="b5bd-6a96-54ab-7cd4" type="selectionEntry" targetId="9525-22ab-920f-80d5" sortIndex="2"/>
+        <entryLink import="true" name="Chaos Rhino" hidden="false" id="1de5-ad93-54d1-1522" type="selectionEntry" targetId="a180-cc1a-4a8e-c00a" sortIndex="4"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Icon Bearer" hidden="false" id="a877-9578-a330-b58c" sortIndex="3">
@@ -1989,7 +2017,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Squad" id="cf11-f916-3962-a58e" hidden="false" flatten="true">
+        <selectionEntryGroup name="Retinue" id="cf11-f916-3962-a58e" hidden="false" flatten="true" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Space Marine" hidden="false" id="1023-d3b2-e388-12ed" type="selectionEntry" targetId="92b5-ae50-e599-c149"/>
             <entryLink import="true" name="Aspiring Champion" hidden="false" id="2cfc-5ede-d493-11e3" type="selectionEntry" targetId="d705-9e2e-6607-8821"/>
@@ -1998,11 +2026,157 @@
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="6c54-584f-7611-2cf2"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="632a-ca38-8dff-540c"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7504-c4a2-628c-6913"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="7504-c4a2-628c-6913"/>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chaos Space Marine w/ Weapon Upgrade" hidden="false" id="c7d3-f569-e5d1-7c12">
+              <infoLinks>
+                <infoLink name="Chaos Space Marine" id="aca5-f57b-5ed6-d8b1" hidden="false" type="profile" targetId="ad54-877f-bb5d-c83c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="56b6-115a-84b8-fd16"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade" id="7675-7629-b032-bad8" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Missile launcher" hidden="false" id="fa26-cca1-884a-2084">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="20"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Missile Launcher (frag)" id="6ef1-f742-83c1-50ad" hidden="false" type="profile" targetId="aa04-2d5e-da7e-2d25"/>
+                        <infoLink name="Missile Launcher (krak)" id="06ee-6881-4e90-abf0" hidden="false" type="profile" targetId="4e6c-7b62-ba6d-05cf"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="b8b3-82b8-af4a-b25f">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="20"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Autocannon" id="1454-622e-02a3-a802" hidden="false" type="profile" targetId="6128-e2af-037e-4d1a"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="8f39-bc00-f658-0591">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Heavy Bolter" id="77c9-cadc-9844-24f1" hidden="false" type="profile" targetId="b9aa-366b-bd62-4692"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="1430-8397-5d81-085e">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="35"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Lascannon" id="d3e8-5849-cd76-4055" hidden="false" type="profile" targetId="a160-d79e-e7a9-2e9c"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="1359-22cc-81ab-0d9e">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Flamer" id="ccd2-4924-21ac-8b12" hidden="false" type="profile" targetId="9177-ce8a-92e3-157e"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="ff98-f5a9-ad35-d1dd">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="6"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Plasma Gun" id="e1f4-0385-051a-4d69" hidden="false" type="profile" targetId="112a-baea-9eeb-b1b5"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="cd94-bb42-61cb-ed50">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Meltagun" id="33b9-a939-308f-5721" hidden="false" type="profile" targetId="737d-c7ef-4cb5-e6fa"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4250-a671-9103-85bd-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4250-a671-9103-85bd-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chaos Terminator w/ Weapon Upgrade" hidden="false" id="9a24-74d9-c864-f14b">
+              <infoLinks>
+                <infoLink name="Chaos Terminator" id="d325-0843-2155-680e" hidden="false" type="profile" targetId="b0e4-f189-a7e4-8d18"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="1eb7-7a04-94e7-3385" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="559f-d77d-a8b3-b645-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="559f-d77d-a8b3-b645-max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy flamer &amp; Power fist" hidden="false" id="fc69-d9aa-ae3c-0464">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Power Fist" id="1245-eeb0-d9f6-876d" hidden="false" type="profile" targetId="a161-ed4b-bcb7-0a01"/>
+                        <infoLink name="Heavy Flamer" id="9753-74cb-cf3a-1ad5" hidden="false" type="profile" targetId="6d36-2c09-dfc3-f257"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8b4-1f5a-0241-0373"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Autocannon &amp; Power fist" hidden="false" id="1ec8-9107-a327-8e87">
+                      <costs>
+                        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Autocannon" id="2c49-ce66-943b-be8d" hidden="false" type="profile" targetId="6128-e2af-037e-4d1a"/>
+                        <infoLink name="Power Fist" id="ec4b-a4e8-83e8-16a6" hidden="false" type="profile" targetId="a161-ed4b-bcb7-0a01"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1084-24ff-e1d7-2af8"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fd5-e2d2-5ff4-d6c0"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="3778-0e8f-c3a3-5679" hidden="false" type="rule" targetId="5715-6219-5059-9bcf">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d705-9e2e-6607-8821" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="92b5-ae50-e599-c149" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Aspiring Champion" hidden="false" id="d705-9e2e-6607-8821">
+    <selectionEntry type="model" import="true" name="Aspiring Champion" hidden="false" id="d705-9e2e-6607-8821">
       <infoLinks>
         <infoLink name="Aspiring Champion" id="5a5a-2c22-d5a7-dd24" hidden="false" type="profile" targetId="1006-3177-f76b-63fd"/>
       </infoLinks>
@@ -2013,7 +2187,7 @@
         <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="1556-98a4-319f-a973" type="selectionEntryGroup" targetId="1c4f-809a-25f7-eb81"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chaos Terminator" hidden="false" id="90ea-4caf-490a-41c9">
+    <selectionEntry type="model" import="true" name="Chaos Terminator" hidden="false" id="90ea-4caf-490a-41c9">
       <infoLinks>
         <infoLink name="Chaos Terminator" id="f69c-1086-5c44-eba6" hidden="false" type="profile" targetId="b0e4-f189-a7e4-8d18"/>
       </infoLinks>
@@ -2021,13 +2195,39 @@
         <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="42"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Space Marine" hidden="false" id="92b5-ae50-e599-c149">
+    <selectionEntry type="model" import="true" name="Chaos Space Marine" hidden="false" id="92b5-ae50-e599-c149">
       <costs>
         <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
       </costs>
       <infoLinks>
         <infoLink name="Chaos Space Marine" id="4936-1e1c-89fb-52d2" hidden="false" type="profile" targetId="ad54-877f-bb5d-c83c"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="a5d0-72ce-432f-163f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="053a-2536-06a9-de1b">
+              <infoLinks>
+                <infoLink name="Boltgun" id="8aa9-feda-0c87-7978" hidden="false" type="profile" targetId="60bf-18fd-f6e6-6eb4"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5f3-d45e-1706-0f3b"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolt pistol and Close combat weapon" hidden="false" id="5669-f317-5e10-2759">
+              <infoLinks>
+                <infoLink name="Bolt Pistol" id="ecf9-8cc8-a911-ce68" hidden="false" type="profile" targetId="e9ac-c779-51bb-3c9a"/>
+                <infoLink name="Close Combat Weapon" id="d373-7f1f-c136-c2df" hidden="false" type="profile" targetId="46d5-85f2-d932-f0a2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a9-832b-cebf-d6c5"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe60-e1d5-966c-7a08"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Frag Grenades" hidden="false" id="fb1e-82b3-3990-90c5" collective="false">
       <modifiers>
@@ -2069,46 +2269,6 @@
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Chaos Champions Wargear" id="1c4f-809a-25f7-eb81" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="df75-ea38-e7e7-9644">
-          <costs>
-            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="1"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Close Combat Weapon" id="587e-e452-cd14-32f1" hidden="false" type="profile" targetId="46d5-85f2-d932-f0a2"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Power fist/chainfist" hidden="false" id="91f8-bc15-5f5d-b85a">
-          <costs>
-            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="25"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Power Fist" id="909e-f3d4-71ad-d1cf" hidden="false" type="profile" targetId="a161-ed4b-bcb7-0a01"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="4399-1fcf-91ea-f8f7">
-          <costs>
-            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Power Weapon" id="9213-2100-abf1-54e1" hidden="false" type="profile" targetId="5774-7187-2616-dd8a"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="f14f-e8e4-1d7b-429b">
-          <infoLinks>
-            <infoLink name="Plasma Pistol" id="e4d6-1b82-0e3b-7a4c" hidden="false" type="profile" targetId="7b91-b670-d042-7c88"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bolter" hidden="false" id="b655-9e62-7b78-a687">
-          <costs>
-            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Boltgun" id="8f57-f6f5-e99f-e993" hidden="false" type="profile" targetId="60bf-18fd-f6e6-6eb4"/>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Frag and krak grenades" hidden="false" id="03b0-f0b9-c733-d7d5">
           <costs>
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
@@ -2117,6 +2277,16 @@
             <infoLink name="Frag Grenades" id="aeaf-5848-1189-79e6" hidden="false" type="profile" targetId="9dd4-e950-2419-5934"/>
             <infoLink name="Krak Grenades" id="87c9-1801-4c5f-c367" hidden="false" type="profile" targetId="9c1b-bf93-059b-27f5"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eacb-6a71-2bab-1792"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Terminator armour (Includes storm bolter and power fist)" hidden="false" id="ea54-86be-d4b6-0951">
           <costs>
@@ -2127,17 +2297,102 @@
             <infoLink name="Storm Bolter" id="d17c-05d8-8289-0617" hidden="false" type="profile" targetId="4c6c-9de1-00a8-8016"/>
           </infoLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd63-8feb-2e6d-68ef"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b911-83cc-996a-5cf9"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="2+" field="b309-5233-122f-82bb" affects="profiles.Unit" scope="parent"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b113-b764-f424-074f"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="2" field="b113-b764-f424-074f">
-          <conditionGroups>
-            <conditionGroup type="and">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="29ee-796a-daa8-0cf5" hidden="false" flatten="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bolter" hidden="false" id="b655-9e62-7b78-a687">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Boltgun" id="8f57-f6f5-e99f-e993" hidden="false" type="profile" targetId="60bf-18fd-f6e6-6eb4"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="df75-ea38-e7e7-9644">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="1"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Close Combat Weapon" id="587e-e452-cd14-32f1" hidden="false" type="profile" targetId="46d5-85f2-d932-f0a2"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="f14f-e8e4-1d7b-429b">
+              <infoLinks>
+                <infoLink name="Plasma Pistol" id="e4d6-1b82-0e3b-7a4c" hidden="false" type="profile" targetId="7b91-b670-d042-7c88"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Power fist/chainfist" hidden="false" id="91f8-bc15-5f5d-b85a">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="25"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Power Fist" id="909e-f3d4-71ad-d1cf" hidden="false" type="profile" targetId="a161-ed4b-bcb7-0a01"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="4399-1fcf-91ea-f8f7">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Power Weapon" id="9213-2100-abf1-54e1" hidden="false" type="profile" targetId="5774-7187-2616-dd8a"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b113-b764-f424-074f"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b113-b764-f424-074f">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -2147,13 +2402,10 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Chaos Lord Mounts" id="df98-0f15-3273-36d1" hidden="false">
       <selectionEntries>
@@ -2214,6 +2466,83 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Chaos Champions Wargear" id="4b7f-dfe0-d924-8ff6" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="2005-6d77-3a76-90df">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="1"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Close Combat Weapon" id="1af8-cf1b-63fb-c289" hidden="false" type="profile" targetId="46d5-85f2-d932-f0a2"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Power fist/chainfist" hidden="false" id="6872-2b37-2368-d2e7">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="25"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Power Fist" id="ce21-d8b1-9998-1933" hidden="false" type="profile" targetId="a161-ed4b-bcb7-0a01"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="6c0e-c7a6-ab44-48f3">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Power Weapon" id="e1a5-e347-2d53-20fe" hidden="false" type="profile" targetId="5774-7187-2616-dd8a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="55f5-d341-ba61-84a2">
+          <infoLinks>
+            <infoLink name="Plasma Pistol" id="720d-8747-766d-c7d9" hidden="false" type="profile" targetId="7b91-b670-d042-7c88"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bolter" hidden="false" id="22cd-809a-dded-0f32">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Boltgun" id="b25f-a5e0-288f-0c87" hidden="false" type="profile" targetId="60bf-18fd-f6e6-6eb4"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Frag and krak grenades" hidden="false" id="4b8c-0958-3c08-e415">
+          <costs>
+            <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Frag Grenades" id="1982-d375-6b35-cebf" hidden="false" type="profile" targetId="9dd4-e950-2419-5934"/>
+            <infoLink name="Krak Grenades" id="5ce6-d94c-0ae7-1641" hidden="false" type="profile" targetId="9c1b-bf93-059b-27f5"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa3e-2469-1088-5e36"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="fa3e-2469-1088-5e36">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="fdcf-c69c-54df-fdf9" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="2e88-027d-d923-5471" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="e467-075d-892d-73fa" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <comment>Chaos Lords</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
