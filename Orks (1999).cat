@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a32b-2b78-118a-10a5" name="Orks (1999)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a32b-2b78-118a-10a5" name="Orks (1999)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="7ae7-ec32-6af0-2290" name="Kult of Speed" hidden="false"/>
     <categoryEntry id="838f-024c-52e0-08f2" name="Deth Kopta" hidden="false"/>
@@ -227,7 +227,7 @@
     </entryLink>
     <entryLink id="d766-c132-e6f9-6dfd" name="Flakk Trukk (Homebrew)" hidden="false" collective="false" import="true" targetId="c01a-f670-c009-1fb4" type="selectionEntry"/>
     <entryLink id="3bf6-1168-8f9f-49da" name="Stompa (Homebrew)" hidden="false" collective="false" import="true" targetId="d74d-e6b5-8f89-cd59" type="selectionEntry"/>
-    <entryLink import="true" name="Attak Fighta (Homebrew)" hidden="false" id="58b4-c5df-981c-e922" type="selectionEntry" targetId="d35c-4cd0-4d45-dd39">
+    <entryLink import="true" name="Attack Fighta (Homebrew)" hidden="false" id="58b4-c5df-981c-e922" type="selectionEntry" targetId="d35c-4cd0-4d45-dd39">
       <categoryLinks>
         <categoryLink targetId="34e2-d53c-28ab-44cf" id="1f00-962a-795b-b0ed" primary="true" name="Fast Attack"/>
       </categoryLinks>
@@ -5773,7 +5773,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
     </selectionEntryGroup>
     <selectionEntryGroup id="ca39-32a0-1351-b07f" name="Single Handed Weapons" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="f7f3-d4d1-b9e9-54a1" name="Choppa" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f7f3-d4d1-b9e9-54a1" name="Choppa" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -5792,7 +5792,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a919-acb4-6929-0f94" name="Power Claw" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a919-acb4-6929-0f94" name="Power Claw" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -5811,7 +5811,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="25"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="10e7-55de-7dda-0597" name="Slugga" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="10e7-55de-7dda-0597" name="Slugga" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -5829,7 +5829,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="415b-103e-6bf1-7e9e" name="&apos;Urty Syringe" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="415b-103e-6bf1-7e9e" name="&apos;Urty Syringe" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5861,7 +5861,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be5f-7d1c-3cc2-26da" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="084e-87e9-cf47-b4f7" name="Big Shoota" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="084e-87e9-cf47-b4f7" name="Big Shoota" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -5879,7 +5879,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="12"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3be8-9837-0799-ad8a" name="Burna" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3be8-9837-0799-ad8a" name="Burna" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -5902,7 +5902,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="89ff-bb2d-385e-8064" name="Grabba Stik" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="89ff-bb2d-385e-8064" name="Grabba Stik" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -5922,7 +5922,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="5"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b147-9ed1-8ce5-55cd" name="Kombi Shoota/Rokkit Launcha" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b147-9ed1-8ce5-55cd" name="Kombi Shoota/Rokkit Launcha" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a463-feb2-f198-98fd" type="max"/>
           </constraints>
@@ -5935,7 +5935,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="5"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1c1a-f88f-ba25-b47e" name="Kombi Shoota/Skorcha" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1c1a-f88f-ba25-b47e" name="Kombi Shoota/Skorcha" hidden="false" collective="false" import="true" type="upgrade" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4d5-c9b4-eacf-576c" type="max"/>
           </constraints>
@@ -5948,7 +5948,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="8"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="98d0-3648-c2f2-f850" name="Kustom Force Field" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="98d0-3648-c2f2-f850" name="Kustom Force Field" hidden="false" collective="false" import="true" type="upgrade" sortIndex="6">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5973,7 +5973,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="20"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="54a9-db9a-9e9f-724b" name="Kustom Mega-Blasta" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="54a9-db9a-9e9f-724b" name="Kustom Mega-Blasta" hidden="false" collective="false" import="true" type="upgrade" sortIndex="7">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5996,7 +5996,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b104-957d-c107-547e" name="Rokkit Launcha" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b104-957d-c107-547e" name="Rokkit Launcha" hidden="false" collective="false" import="true" type="upgrade" sortIndex="8">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6014,7 +6014,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="8"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a238-dd66-f951-5797" name="Shoota" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a238-dd66-f951-5797" name="Shoota" hidden="false" collective="false" import="true" type="upgrade" sortIndex="9">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6032,7 +6032,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7b9d-0030-68ac-503e" name="&apos;Uge Choppa" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7b9d-0030-68ac-503e" name="&apos;Uge Choppa" hidden="false" collective="false" import="true" type="upgrade" sortIndex="10">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6098,7 +6098,7 @@ The Ork vehicle may shoot in the shooting phase as normal and then resolves an a
         <constraint field="4ed5-2f92-9abc-2870" scope="parent" value="40" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="edf0-352a-bf53-449d" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="72f2-3d0e-384a-dd84" name="Ammo Runt" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="72f2-3d0e-384a-dd84" name="Ammo Runt" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <modifiers>
             <modifier type="increment" field="4ed5-2f92-9abc-2870" value="5">
               <conditions>
@@ -6134,7 +6134,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="4"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8a6b-1dd8-403c-8c50" name="Attack Squig" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8a6b-1dd8-403c-8c50" name="Attack Squig" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <modifiers>
             <modifier type="increment" field="4ed5-2f92-9abc-2870" value="5">
               <conditions>
@@ -6164,7 +6164,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="6"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="31cf-25f8-089e-40f0" name="Iron Gob" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="31cf-25f8-089e-40f0" name="Big Horns/Iron Gob" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6172,6 +6172,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8fb-7699-1ead-bc0d" type="notInstanceOf"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32d-5cad-2d37-2401" type="notInstanceOf"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="fdd0-6bc8-710f-4b77" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -6194,7 +6195,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="6"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="af19-54e0-bf2f-6760" name="Bionik Arm" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="af19-54e0-bf2f-6760" name="Bionik Arm" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6219,7 +6220,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="03f2-a594-b5f7-7f35" name="Bionik Bonce" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="03f2-a594-b5f7-7f35" name="Bionik Bonce" hidden="false" collective="false" import="true" type="upgrade" sortIndex="5">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6244,7 +6245,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="792c-ebfe-57b2-b11c" name="Bosspole" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="792c-ebfe-57b2-b11c" name="Bosspole" hidden="false" collective="false" import="true" type="upgrade" sortIndex="6">
           <modifiers>
             <modifier type="set" field="a8d1-61ca-f82b-9b17" value="1">
               <conditionGroups>
@@ -6274,7 +6275,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8af0-0343-cccb-8c71" name="Cybork Body" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8af0-0343-cccb-8c71" name="Cybork Body" hidden="false" collective="false" import="true" type="upgrade" sortIndex="7">
           <modifiers>
             <modifier type="increment" field="4ed5-2f92-9abc-2870" value="5">
               <conditions>
@@ -6297,7 +6298,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9131-d3f0-ac51-1b1e" name="Dok&apos;s Tools" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9131-d3f0-ac51-1b1e" name="Dok&apos;s Tools" hidden="false" collective="false" import="true" type="upgrade" sortIndex="8">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6327,7 +6328,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="06ff-0627-6709-a3ac" name="&apos;Eavy Armor" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="06ff-0627-6709-a3ac" name="&apos;Eavy Armor" hidden="false" collective="false" import="true" type="upgrade" sortIndex="9">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6350,7 +6351,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="8"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ba2c-490e-c494-a4ab" name="Frag Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ba2c-490e-c494-a4ab" name="Frag Stikkbombz" hidden="false" collective="false" import="true" type="upgrade" sortIndex="10">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6373,7 +6374,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d264-9600-f359-74a5" name="Grot Oiler" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d264-9600-f359-74a5" name="Grot Oiler" hidden="false" collective="false" import="true" type="upgrade" sortIndex="11">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6418,7 +6419,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="6"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="84b3-316b-bfc8-1594" name="Grot Orderly" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="84b3-316b-bfc8-1594" name="Grot Orderly" hidden="false" collective="false" import="true" type="upgrade" sortIndex="12">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6463,7 +6464,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="6"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5587-ed7b-772e-fe0d" name="Krak Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5587-ed7b-772e-fe0d" name="Krak Stikkbombz" hidden="false" collective="false" import="true" type="upgrade" sortIndex="13">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6486,7 +6487,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0955-398d-796b-1bc8" name="Kustom Job: More Dakka" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0955-398d-796b-1bc8" name="Kustom Job: More Dakka" hidden="false" collective="false" import="true" type="upgrade" sortIndex="14">
           <modifiers>
             <modifier type="increment" field="4ed5-2f92-9abc-2870" value="5">
               <conditions>
@@ -6504,7 +6505,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="4"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="417e-4574-4452-167d" name="Kustom Job: Blasta" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="417e-4574-4452-167d" name="Kustom Job: Blasta" hidden="false" collective="false" import="true" type="upgrade" sortIndex="15">
           <modifiers>
             <modifier type="increment" field="4ed5-2f92-9abc-2870" value="5">
               <conditions>
@@ -6522,7 +6523,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5230-36dc-cee3-c657" name="Kustom Job: Shootier" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5230-36dc-cee3-c657" name="Kustom Job: Shootier" hidden="false" collective="false" import="true" type="upgrade" sortIndex="16">
           <modifiers>
             <modifier type="increment" field="4ed5-2f92-9abc-2870" value="5">
               <conditions>
@@ -6540,7 +6541,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1518-7a1b-daac-0172" name="Mega Armor" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1518-7a1b-daac-0172" name="Mega Armor" hidden="false" collective="false" import="true" type="upgrade" sortIndex="17">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6558,6 +6559,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
                       <conditions>
                         <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f8fb-7699-1ead-bc0d" type="notInstanceOf"/>
                         <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b32d-5cad-2d37-2401" type="notInstanceOf"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="fdd0-6bc8-710f-4b77" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -6586,7 +6588,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="30"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="75d0-445f-ba7d-e7ff" name="Mega Boosta" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="75d0-445f-ba7d-e7ff" name="Mega Boosta" hidden="false" collective="false" import="true" type="upgrade" sortIndex="18">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6611,7 +6613,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ae8f-ac13-375a-f10c" name="Mekboy&apos;s Tools" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ae8f-ac13-375a-f10c" name="Mekboy&apos;s Tools" hidden="false" collective="false" import="true" type="upgrade" sortIndex="19">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6641,7 +6643,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="2"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c7c7-636c-43d6-6278" name="Squighound" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c7c7-636c-43d6-6278" name="Squighound" hidden="false" collective="false" import="true" type="upgrade" sortIndex="20">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6681,7 +6683,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="5"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f287-48d3-2273-0079" name="Stikkbomb Chucka" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f287-48d3-2273-0079" name="Stikkbomb Chucka" hidden="false" collective="false" import="true" type="upgrade" sortIndex="21">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6706,7 +6708,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ed97-2751-5a39-7b1d" name="Super Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ed97-2751-5a39-7b1d" name="Super Stikkbombz" hidden="false" collective="false" import="true" type="upgrade" sortIndex="22">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -6736,7 +6738,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="5"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5eff-36fe-24fc-062e" name="Tankbusta Bombz" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5eff-36fe-24fc-062e" name="Tankbusta Bombz" hidden="false" collective="false" import="true" type="upgrade" sortIndex="23">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6761,7 +6763,7 @@ The ammo runt may not be chosen as a casualtiy caused by enemy shooting, but Bla
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="18ce-1821-0982-20b3" name="Waaagh! Banner" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="18ce-1821-0982-20b3" name="Waaagh! Banner" hidden="false" collective="false" import="true" type="upgrade" sortIndex="24">
           <modifiers>
             <modifier type="increment" field="4ed5-2f92-9abc-2870" value="5">
               <conditions>
