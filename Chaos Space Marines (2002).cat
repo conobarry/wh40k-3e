@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0f19-9487-acbb-e047" name="Chaos Space Marines (2002)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0f19-9487-acbb-e047" name="Chaos Space Marines (2002)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>2002 Chaos Space Marine Codex</comment>
   <categoryEntries>
     <categoryEntry id="039c-5796-7006-0975" name="Mark of Khorne" hidden="false"/>
@@ -298,7 +298,7 @@
     <entryLink id="0ee9-cc1e-1608-75e7" name="Forgefiend (Homebrew)" hidden="false" collective="false" import="true" targetId="c743-5d92-38d8-8ad9" type="selectionEntry"/>
     <entryLink id="476c-e0d7-8f1d-7c48" name="Maulerfiend (Homebrew)" hidden="false" collective="false" import="true" targetId="f92e-ed72-d3f4-0a71" type="selectionEntry"/>
     <entryLink id="bb5f-a0fc-b42e-35d3" name="Helldrake (Homebrew)" hidden="false" collective="false" import="true" targetId="bc00-24bd-ea7f-3134" type="selectionEntry"/>
-    <entryLink id="eaa3-0ecd-666c-6bc6" name="Khorne Lord of Skulls" hidden="false" collective="false" import="true" targetId="76e8-0006-d8f4-e536" type="selectionEntry"/>
+    <entryLink id="eaa3-0ecd-666c-6bc6" name="Khorne Lord of Skulls (Homebrew)" hidden="false" collective="false" import="true" targetId="76e8-0006-d8f4-e536" type="selectionEntry"/>
     <entryLink id="f858-1e3f-e102-7430" name="Mounted Daemonette Daemon Pack" hidden="false" collective="false" import="true" targetId="ee9c-7446-f48a-f942" type="selectionEntry"/>
     <entryLink id="e279-4747-818e-a3d8" name="Kharn the Betrayer" hidden="false" collective="false" import="true" targetId="6b75-5c8b-898f-eaa0" type="selectionEntry"/>
     <entryLink import="true" name="Khorne Beserker Bikers" hidden="false" id="a047-2009-6447-1a08" collective="false" targetId="0d50-913a-14bc-960d" type="selectionEntry">
@@ -909,6 +909,7 @@
       <infoLinks>
         <infoLink id="cea7-7496-6f6f-478a" name="Daemonic Reslilience" hidden="false" targetId="f08b-40f4-0069-5126" type="rule"/>
         <infoLink id="1154-f632-5e75-3db0" name="Fearless" hidden="false" targetId="b137-13a1-eb97-c5e5" type="rule"/>
+        <infoLink name="True Grit" id="94a0-83df-e8b5-deb0" hidden="false" type="rule" targetId="5734-7de5-c430-cb4e"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="0"/>
@@ -1292,7 +1293,7 @@
         <infoLink id="d255-5b5f-01e1-c3c8" name="Daemonic Visage" hidden="false" targetId="e8ac-c6ca-da7f-8b78" type="rule"/>
         <infoLink id="071d-7a80-626b-4d57" name="Fearless" hidden="false" targetId="b137-13a1-eb97-c5e5" type="rule"/>
         <infoLink id="33ec-05ba-4be9-9acd" name="Possession" hidden="false" targetId="d1c9-1fdc-179b-02fa" type="rule"/>
-        <infoLink id="85b7-a2ff-8b5a-64cb" name="Monstorous Creature" hidden="false" targetId="445e-e873-2a3f-776f" type="rule"/>
+        <infoLink id="85b7-a2ff-8b5a-64cb" name="Monstrous Creature" hidden="false" targetId="445e-e873-2a3f-776f" type="rule"/>
         <infoLink id="7834-6532-40a9-ab19" name="Invulnerable Saving Throw" hidden="false" targetId="97b3-810d-a09e-872b" type="rule"/>
         <infoLink id="8c76-9116-e6c7-b567" name="Bloodthirster" hidden="false" targetId="15c2-d765-552e-5475" type="profile"/>
       </infoLinks>
@@ -3899,7 +3900,7 @@
       <infoLinks>
         <infoLink id="107c-2a59-d743-44d1" name="Chaos Defiler" hidden="false" targetId="71b4-3a04-687f-95e2" type="profile"/>
         <infoLink id="08a3-9f5b-c12d-d198" name="Battle Cannon" hidden="false" targetId="3a2e-94e4-b9a3-bb11" type="profile"/>
-        <infoLink id="728e-2bc1-9f77-311f" name="Monstorous Creature" hidden="false" targetId="445e-e873-2a3f-776f" type="rule"/>
+        <infoLink id="728e-2bc1-9f77-311f" name="Monstrous Creature" hidden="false" targetId="445e-e873-2a3f-776f" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dfdb-2814-cb4b-46ab" name="Heavy Support" hidden="false" targetId="aacb-8a81-62c0-3db8" primary="true"/>
@@ -10809,7 +10810,7 @@ A Dreadnought with Destroyer upgrade my re-roll one close combat miss in each ro
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="f3a3-1682-0732-cced" name="Monstorous Creature" hidden="false" targetId="445e-e873-2a3f-776f" type="rule"/>
+            <infoLink id="f3a3-1682-0732-cced" name="Monstrous Creature" hidden="false" targetId="445e-e873-2a3f-776f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
@@ -13112,7 +13113,7 @@ A Dreadnought with Destroyer upgrade my re-roll one close combat miss in each ro
       <description>Always count as stationary when firing, even if they moved in the same turn. But move as if in difficult terrain at all times, and never receive +1 Attack for charging. Also strike at I1 in close combat and never perform a Sweeping Advance.</description>
     </rule>
     <rule id="5734-7de5-c430-cb4e" name="True Grit" hidden="false">
-      <description>Models with True Grit have learned how to use their bolters so that they can treat their bolters as a bolt pistol in close combat and will therefore be allowed to roll and extra Attack dice as if they had two close combat weapons. However, a model using their bolter in this manner may not recieve the attack bonus for charging.</description>
+      <description>Models with True Grit can treat their bolters as a bolt pistol in close combat and will therefore be allowed to roll an extra Attack dice if they have been equipped with a second pistol or close combat weapon. However, a model using their bolter in this manner may not receive the attack bonus for charging.</description>
     </rule>
     <rule id="f08b-40f4-0069-5126" name="Daemonic Reslilience" hidden="false">
       <description>+1 Toughness</description>
