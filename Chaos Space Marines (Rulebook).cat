@@ -2081,6 +2081,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <comment>Chaos Space Marine Squad</comment>
+      <costs>
+        <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
