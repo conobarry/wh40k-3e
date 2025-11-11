@@ -525,10 +525,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3074-dd00-f2f2-583e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Aspiring Champion" id="9106-f7bf-dc93-898c" hidden="false" targetId="0df0-0609-df17-5243" type="profile"/>
+                <infoLink name="Aspiring Champion" id="9106-f7bf-dc93-898c" hidden="false" targetId="1006-3177-f76b-63fd" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Chaos Armoury" hidden="false" id="0d08-6f89-0b21-b4e8" collective="false" targetId="f2d6-226f-3a34-c33f" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="0d08-6f89-0b21-b4e8" collective="false" targetId="1c4f-809a-25f7-eb81" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="30"/>
@@ -745,7 +745,7 @@
         <categoryLink name="HQ" hidden="false" id="6e39-71dd-b4c3-95c2" targetId="a8a7-7a4b-5f7e-2138" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="eb41-5d19-351d-5076" type="selectionEntryGroup" targetId="4b7f-dfe0-d924-8ff6"/>
+        <entryLink import="true" name="Chaos Champions Wargear" hidden="false" id="eb41-5d19-351d-5076" type="selectionEntryGroup" targetId="1c4f-809a-25f7-eb81"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="30"/>
@@ -872,7 +872,7 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="13ac-3fd0-a7b9-8985" collective="false">
               <infoLinks>
-                <infoLink name="Veteran" id="35bf-de81-7c9a-905d" hidden="false" targetId="7d7d-c8cc-d505-e1a9" type="profile"/>
+                <infoLink name="Veteran" id="35bf-de81-7c9a-905d" hidden="false" targetId="d1d8-b363-8f5b-1352" type="profile"/>
                 <infoLink name="Bolt Pistol" id="fb79-9dc9-695c-4f50" hidden="false" targetId="e9ac-c779-51bb-3c9a" type="profile"/>
                 <infoLink name="Close Combat Weapon" id="f8d7-7565-5648-879f" hidden="false" targetId="46d5-85f2-d932-f0a2" type="profile"/>
                 <infoLink name="Boltgun" id="7aef-9686-d422-420d" hidden="false" targetId="60bf-18fd-f6e6-6eb4" type="profile"/>
@@ -881,21 +881,17 @@
                 <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="18"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Aspiring Champion" hidden="false" id="0df9-73b5-c6e6-4cba" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f2c-0c24-4f16-864c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Veteran Aspiring Champion" id="f774-99c6-ccb4-7cbe" hidden="false" targetId="1fd4-91ec-932e-c5bb" type="profile"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Chaos Armoury" hidden="false" id="89f0-dbed-f24b-5735" collective="false" targetId="f2d6-226f-3a34-c33f" type="selectionEntryGroup"/>
-              </entryLinks>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Aspiring Champion" hidden="false" id="9435-5937-6d35-92c7" type="selectionEntry" targetId="d705-9e2e-6607-8821">
               <costs>
                 <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="33"/>
               </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6812-2c7d-2dcb-f3a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Weapon Option" id="eb7a-20ec-254c-49e0" hidden="false" collective="false" import="true">
           <constraints>
@@ -971,11 +967,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Rhino" hidden="false" id="08cc-33dd-35db-a14e" collective="false" targetId="1692-5ed3-6679-24d4" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8484-1242-4fed-c85d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Chaos Rhino" hidden="false" id="68c2-524c-b217-1478" type="selectionEntry" targetId="a180-cc1a-4a8e-c00a"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="0"/>
@@ -1002,6 +994,9 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a442-81be-bf96-9c63"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -1032,22 +1027,6 @@
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="5a87-34ab-cb96-7717" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="f507-8561-ac99-7ea9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Aspiring Champion" hidden="false" id="a0fd-0876-2eb9-67f3" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6d1-0509-bc9c-8026" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Chaos Terminator" id="f552-094e-7c89-4bfd" hidden="false" targetId="7794-983a-6f12-663c" type="profile"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Chaos Armoury" hidden="false" id="864b-06f7-ddf2-0754" collective="false" targetId="f2d6-226f-3a34-c33f" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="51"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Chaos Terminator" hidden="false" id="ff30-fb08-d5b9-5e99" type="selectionEntry" targetId="90ea-4caf-490a-41c9"/>
           </entryLinks>
@@ -1501,7 +1480,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Rhino" hidden="false" id="b524-06af-0612-8ed1" collective="false" targetId="1692-5ed3-6679-24d4" type="selectionEntry">
+        <entryLink import="true" name="Chaos Rhino" hidden="false" id="b524-06af-0612-8ed1" collective="false" targetId="a180-cc1a-4a8e-c00a" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0028-9bc5-3570-5f12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1643,7 +1622,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Rhino" hidden="false" id="e532-996f-4089-2b8e" collective="false" targetId="1692-5ed3-6679-24d4" type="selectionEntry">
+        <entryLink import="true" name="Chaos Rhino" hidden="false" id="e532-996f-4089-2b8e" collective="false" targetId="a180-cc1a-4a8e-c00a" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af6a-50d5-d4d5-94dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1686,7 +1665,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Chaos Rhino" hidden="false" id="7592-684e-541d-65b1" collective="false" targetId="1692-5ed3-6679-24d4" type="selectionEntry">
+        <entryLink import="true" name="Chaos Rhino" hidden="false" id="7592-684e-541d-65b1" collective="false" targetId="a180-cc1a-4a8e-c00a" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5911-58fb-41c7-6df7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -1732,6 +1711,9 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="85e6-562f-c1d6-96ac"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -1780,6 +1762,9 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fd5-e2d2-5ff4-d6c0"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="42"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2142,7 +2127,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2157,7 +2142,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2172,7 +2157,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2187,7 +2172,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2202,7 +2187,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a932-f107-af9b-b1d0" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea54-86be-d4b6-0951" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2293,11 +2278,6 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
-    <entryLink import="true" name="Chaos Space Marine Squad Test" hidden="false" id="e0ba-1d2c-b55f-65ba" type="selectionEntry" targetId="da30-4b16-4a22-3356">
-      <categoryLinks>
-        <categoryLink name="Troops" hidden="false" id="b5ad-06b4-2a40-2dd2" targetId="0ef5-5056-d52e-3cfd" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Bloodthirster" hidden="false" id="3d08-2e7e-cbd8-f65c" type="selectionEntry" targetId="fe09-95db-a716-2990"/>
     <entryLink import="true" name="Chaos Dreadnought" hidden="false" id="431f-b265-cb9f-f026" type="selectionEntry" targetId="5cd7-e44d-7756-e836"/>
     <entryLink import="true" name="Chaos Land Raider" hidden="false" id="a1b0-7782-6a05-69bf" type="selectionEntry" targetId="5591-452e-b2aa-5773"/>
