@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ec00-168a-924d-e400" name="Chaos Space Marines (Rulebook)" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ec00-168a-924d-e400" name="Chaos Space Marines (Rulebook)" gameSystemId="96e2-b781-50d7-3d18" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Aspiring Champion" typeId="1e16-2bd8-7cad-379b" typeName="Unit" hidden="false" id="1006-3177-f76b-63fd">
       <characteristics>
@@ -998,7 +998,7 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Chaos Space Marine" hidden="false" id="db82-776c-d683-bf8e" type="selectionEntry" targetId="92b5-ae50-e599-c149"/>
-            <entryLink import="true" name="Chaos Space Marine w/ Weapon Upgrade" hidden="false" id="8648-04e4-3f45-ff96" type="selectionEntry" targetId="e155-bd31-c799-eced">
+            <entryLink import="true" name="Chaos Space Marine w/ Weapon Upgrade" hidden="false" id="8648-04e4-3f45-ff96" type="selectionEntry" targetId="3598-39df-6d14-3058">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a442-81be-bf96-9c63"/>
               </constraints>
@@ -2022,6 +2022,80 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <comment>Chaos Lord&apos;s Retinue</comment>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chaos Space Marine w/ Weapon Upgrade" hidden="false" id="3598-39df-6d14-3058">
+      <infoLinks>
+        <infoLink name="Chaos Space Marine" id="efd1-9299-b88f-5e6d" hidden="false" type="profile" targetId="ad54-877f-bb5d-c83c"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Upgrade" id="dc95-1248-4090-bd8e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Missile launcher" hidden="false" id="93e4-0e63-6cbc-88c8">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Missile Launcher (frag)" id="3f57-44f4-05a4-e0fb" hidden="false" type="profile" targetId="aa04-2d5e-da7e-2d25"/>
+                <infoLink name="Missile Launcher (krak)" id="8558-8db6-82a6-d062" hidden="false" type="profile" targetId="4e6c-7b62-ba6d-05cf"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5f41-4230-d6af-9952">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Autocannon" id="8124-0bcd-331c-f020" hidden="false" type="profile" targetId="6128-e2af-037e-4d1a"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="25c0-5b85-463a-f096">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Heavy Bolter" id="b842-8f53-4939-93c5" hidden="false" type="profile" targetId="b9aa-366b-bd62-4692"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="18be-63d4-16f0-284a">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Lascannon" id="984e-d7b5-6018-1dce" hidden="false" type="profile" targetId="a160-d79e-e7a9-2e9c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="1c54-4227-db8a-d9ed">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="3"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Flamer" id="e7c0-23a2-ceb3-5b87" hidden="false" type="profile" targetId="9177-ce8a-92e3-157e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="80c8-592e-2e02-071a">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="6"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Plasma Gun" id="fe8c-79e8-9508-5121" hidden="false" type="profile" targetId="112a-baea-9eeb-b1b5"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="2d9b-f766-cc32-da5e">
+              <costs>
+                <cost name="pts" typeId="4ed5-2f92-9abc-2870" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Meltagun" id="7fb6-e380-2f54-f83d" hidden="false" type="profile" targetId="737d-c7ef-4cb5-e6fa"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14d3-9a34-4cdc-6500"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25ba-8bbc-1f2f-995a"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <comment>Chaos Space Marine Squad</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
